@@ -1,0 +1,68 @@
+name: KiyoPro
+options:
+  bundleIdPrefix: com.nebuk89
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: 89N7ZG42ZM
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    CURRENT_PROJECT_VERSION: 2
+    MARKETING_VERSION: 0.2.0
+targets:
+  KiyoPro:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nebuk89.KiyoProControl
+        PRODUCT_NAME: Kiyo Pro Control
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/KiyoPro.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: Kiyo Pro Control
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - target: KiyoProCameraExtension
+        embed: true
+        codeSign: true
+    preBuildScripts:
+      - name: Build Kiyo Control Helper
+        basedOnDependencyAnalysis: false
+        script: |
+          set -euo pipefail
+          cargo build --release --locked --manifest-path "$SRCROOT/../Cargo.toml"
+          HELPER_DIR="$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers"
+          mkdir -p "$HELPER_DIR"
+          cp "$SRCROOT/../target/release/kiyo" "$HELPER_DIR/kiyo"
+          codesign --force --sign "$EXPANDED_CODE_SIGN_IDENTITY" --options runtime --timestamp=none "$HELPER_DIR/kiyo"
+  KiyoProCameraExtension:
+    type: system-extension
+    platform: macOS
+    sources:
+      - path: CameraExtension
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nebuk89.KiyoProControl.CameraExtension
+        PRODUCT_NAME: com.nebuk89.KiyoProControl.CameraExtension
+        SKIP_INSTALL: YES
+        INFOPLIST_FILE: CameraExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: CameraExtension/CameraExtension.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: Kiyo Pro 1080p Camera Extension
+schemes:
+  KiyoPro:
+    build:
+      targets:
+        KiyoPro: all
+        KiyoProCameraExtension: all
+    run:
+      config: Debug
+    archive:
+      config: Release
