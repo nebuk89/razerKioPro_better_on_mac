@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DBE0B3DF84C4B17DC64DBB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F189FAAE5142B8F57DE0251 /* main.swift */; };
+		3C0D61068870CE4EF10B44F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E029522BF6B04493C7BD2F /* ContentView.swift */; };
+		660A254C9329C7EF4E471BF9 /* KiyoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BBE732E9FDA69C1866013 /* KiyoConstants.swift */; };
+		8065F4F358AA62DB97BD741E /* KiyoProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B6C4118310B6A305BD69F /* KiyoProApp.swift */; };
+		879F80BEF4249A5C009956C8 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFD6C86D11CB9528ECAD8 /* AppModel.swift */; };
+		A1531AC7CD82E2DAFBECADAA /* KiyoProCameraExtension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 591D5E81071E1B9AD46CD260 /* KiyoProCameraExtension.systemextension */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A738CC6BEB7CFC3654489E46 /* KiyoDeviceSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB10E8083D1296AEA3FFCBC /* KiyoDeviceSource.swift */; };
+		AE6B81B8E67B0D7644758DD9 /* CameraSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E9DDC12AEF36746A7C581 /* CameraSettingsModel.swift */; };
+		DCC856E0917498A1A3CC7A8B /* KiyoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BBE732E9FDA69C1866013 /* KiyoConstants.swift */; };
+		F09D166BEA8E8CA87A067023 /* KiyoStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D333D7B401EA966CDF0C48B /* KiyoStreams.swift */; };
+		F2654C50B081FADD2C67CB52 /* CameraExtensionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED60E705D601D610D750033 /* CameraExtensionManager.swift */; };
+		FA0A37122823315FD3A8B060 /* KiyoProviderSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9442AF0FF0BCD5983720F6D /* KiyoProviderSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		194E62475A2B1C229E312398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574DBD927787EDB2319450EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28252DEC103D830BA7FE6863;
+			remoteInfo = KiyoProCameraExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6284AD6D86513585FEC30BE /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				A1531AC7CD82E2DAFBECADAA /* KiyoProCameraExtension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CB10E8083D1296AEA3FFCBC /* KiyoDeviceSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiyoDeviceSource.swift; sourceTree = "<group>"; };
+		0D333D7B401EA966CDF0C48B /* KiyoStreams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiyoStreams.swift; sourceTree = "<group>"; };
+		2F189FAAE5142B8F57DE0251 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3CE9F5B80D3CDD0B10B352F5 /* CameraExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CameraExtension.entitlements; sourceTree = "<group>"; };
+		3ED60E705D601D610D750033 /* CameraExtensionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraExtensionManager.swift; sourceTree = "<group>"; };
+		457BBE732E9FDA69C1866013 /* KiyoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiyoConstants.swift; sourceTree = "<group>"; };
+		479CF6BF947A82BC39A92097 /* KiyoPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KiyoPro.entitlements; sourceTree = "<group>"; };
+		4D1E9DDC12AEF36746A7C581 /* CameraSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingsModel.swift; sourceTree = "<group>"; };
+		591D5E81071E1B9AD46CD260 /* KiyoProCameraExtension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = KiyoProCameraExtension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BB502D37EE1B53F9A3BF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		79E029522BF6B04493C7BD2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7FECFD6C86D11CB9528ECAD8 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A12B6C4118310B6A305BD69F /* KiyoProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiyoProApp.swift; sourceTree = "<group>"; };
+		A8CB4F090E10116D6650F3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D2DE6533B6129AB1D38BF56E /* KiyoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiyoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9442AF0FF0BCD5983720F6D /* KiyoProviderSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiyoProviderSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		03BDBDC19703FF513E3230F6 /* CameraExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3CE9F5B80D3CDD0B10B352F5 /* CameraExtension.entitlements */,
+				A8CB4F090E10116D6650F3D2 /* Info.plist */,
+				0CB10E8083D1296AEA3FFCBC /* KiyoDeviceSource.swift */,
+				F9442AF0FF0BCD5983720F6D /* KiyoProviderSource.swift */,
+				0D333D7B401EA966CDF0C48B /* KiyoStreams.swift */,
+				2F189FAAE5142B8F57DE0251 /* main.swift */,
+			);
+			path = CameraExtension;
+			sourceTree = "<group>";
+		};
+		4968A7E87F86B03A8A98D7BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2DE6533B6129AB1D38BF56E /* KiyoPro.app */,
+				591D5E81071E1B9AD46CD260 /* KiyoProCameraExtension.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527AB2BFDD131C576EEE5524 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				457BBE732E9FDA69C1866013 /* KiyoConstants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		59D9905B6181C1EB2DE60917 = {
+			isa = PBXGroup;
+			children = (
+				FAB6A0D461AB06277F3C1190 /* App */,
+				03BDBDC19703FF513E3230F6 /* CameraExtension */,
+				527AB2BFDD131C576EEE5524 /* Shared */,
+				4968A7E87F86B03A8A98D7BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB6A0D461AB06277F3C1190 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFD6C86D11CB9528ECAD8 /* AppModel.swift */,
+				3ED60E705D601D610D750033 /* CameraExtensionManager.swift */,
+				4D1E9DDC12AEF36746A7C581 /* CameraSettingsModel.swift */,
+				79E029522BF6B04493C7BD2F /* ContentView.swift */,
+				62BB502D37EE1B53F9A3BF06 /* Info.plist */,
+				479CF6BF947A82BC39A92097 /* KiyoPro.entitlements */,
+				A12B6C4118310B6A305BD69F /* KiyoProApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28252DEC103D830BA7FE6863 /* KiyoProCameraExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB7FD65A0CCA05E70918A586 /* Build configuration list for PBXNativeTarget "KiyoProCameraExtension" */;
+			buildPhases = (
+				91AB9BB58ABA9055197F8C19 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KiyoProCameraExtension;
+			packageProductDependencies = (
+			);
+			productName = KiyoProCameraExtension;
+			productReference = 591D5E81071E1B9AD46CD260 /* KiyoProCameraExtension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+		7BA04E97F0DD6415BAA63FD1 /* KiyoPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934C83BD47B032AD21612D94 /* Build configuration list for PBXNativeTarget "KiyoPro" */;
+			buildPhases = (
+				044DCFD9F4E1AE66FE618BAC /* Build Kiyo Control Helper */,
+				3531ED425CC2D2272C115DF0 /* Sources */,
+				C6284AD6D86513585FEC30BE /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94776F143E7DABFEBCB8B54A /* PBXTargetDependency */,
+			);
+			name = KiyoPro;
+			packageProductDependencies = (
+			);
+			productName = KiyoPro;
+			productReference = D2DE6533B6129AB1D38BF56E /* KiyoPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574DBD927787EDB2319450EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					28252DEC103D830BA7FE6863 = {
+						DevelopmentTeam = 89N7ZG42ZM;
+						ProvisioningStyle = Automatic;
+					};
+					7BA04E97F0DD6415BAA63FD1 = {
+						DevelopmentTeam = 89N7ZG42ZM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 109DDC2250CA8D99F9EBC692 /* Build configuration list for PBXProject "KiyoPro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 59D9905B6181C1EB2DE60917;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4968A7E87F86B03A8A98D7BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BA04E97F0DD6415BAA63FD1 /* KiyoPro */,
+				28252DEC103D830BA7FE6863 /* KiyoProCameraExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044DCFD9F4E1AE66FE618BAC /* Build Kiyo Control Helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Kiyo Control Helper";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\ncargo build --release --locked --manifest-path \"$SRCROOT/../Cargo.toml\"\nHELPER_DIR=\"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers\"\nmkdir -p \"$HELPER_DIR\"\ncp \"$SRCROOT/../target/release/kiyo\" \"$HELPER_DIR/kiyo\"\ncodesign --force --sign \"$EXPANDED_CODE_SIGN_IDENTITY\" --options runtime --timestamp=none \"$HELPER_DIR/kiyo\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3531ED425CC2D2272C115DF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879F80BEF4249A5C009956C8 /* AppModel.swift in Sources */,
+				F2654C50B081FADD2C67CB52 /* CameraExtensionManager.swift in Sources */,
+				AE6B81B8E67B0D7644758DD9 /* CameraSettingsModel.swift in Sources */,
+				3C0D61068870CE4EF10B44F5 /* ContentView.swift in Sources */,
+				660A254C9329C7EF4E471BF9 /* KiyoConstants.swift in Sources */,
+				8065F4F358AA62DB97BD741E /* KiyoProApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91AB9BB58ABA9055197F8C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC856E0917498A1A3CC7A8B /* KiyoConstants.swift in Sources */,
+				A738CC6BEB7CFC3654489E46 /* KiyoDeviceSource.swift in Sources */,
+				FA0A37122823315FD3A8B060 /* KiyoProviderSource.swift in Sources */,
+				F09D166BEA8E8CA87A067023 /* KiyoStreams.swift in Sources */,
+				04DBE0B3DF84C4B17DC64DBB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94776F143E7DABFEBCB8B54A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28252DEC103D830BA7FE6863 /* KiyoProCameraExtension */;
+			targetProxy = 194E62475A2B1C229E312398 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12C65DEBEEC24D7228AF81F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/KiyoPro.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kiyo Pro Control";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebuk89.KiyoProControl;
+				PRODUCT_NAME = "Kiyo Pro Control";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1E524912CB026CBA603F0308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 89N7ZG42ZM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		646033D9CD5B158BE156047B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/KiyoPro.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kiyo Pro Control";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebuk89.KiyoProControl;
+				PRODUCT_NAME = "Kiyo Pro Control";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		839D2D6CD9B99E0C2D3B0F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CameraExtension/CameraExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CameraExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kiyo Pro 1080p Camera Extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebuk89.KiyoProControl.CameraExtension;
+				PRODUCT_NAME = com.nebuk89.KiyoProControl.CameraExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8FEB2EF5D2B707FD8DDFC381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CameraExtension/CameraExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CameraExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kiyo Pro 1080p Camera Extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebuk89.KiyoProControl.CameraExtension;
+				PRODUCT_NAME = com.nebuk89.KiyoProControl.CameraExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EAC8981B894425EE174EBB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 89N7ZG42ZM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		109DDC2250CA8D99F9EBC692 /* Build configuration list for PBXProject "KiyoPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC8981B894425EE174EBB6A /* Debug */,
+				1E524912CB026CBA603F0308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		934C83BD47B032AD21612D94 /* Build configuration list for PBXNativeTarget "KiyoPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C65DEBEEC24D7228AF81F9 /* Debug */,
+				646033D9CD5B158BE156047B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB7FD65A0CCA05E70918A586 /* Build configuration list for PBXNativeTarget "KiyoProCameraExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839D2D6CD9B99E0C2D3B0F31 /* Debug */,
+				8FEB2EF5D2B707FD8DDFC381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 574DBD927787EDB2319450EB /* Project object */;
+}
